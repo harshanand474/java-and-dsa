@@ -11,8 +11,11 @@ public class Array
       for(int i=0; i<size; i++) {
           num[i] = sc.nextInt();
       }
-      int max = Integer.MIN_VALUE;//minimum value
-      int min = Integer.MAX_VALUE;//maximum value
+      int max = Integer.MIN_VALUE;//initial max value
+//because Any array number will be greater than MIN_VALUE
+//Any array number will be smaller than MAX_VALUE
+//This guarantees correct comparison.
+      int min = Integer.MAX_VALUE;//initial min value
      for(int i=0; i<num.length; i++)//checking each and ever element of array for finding max and min value
        {
            if(num[i] < min)
